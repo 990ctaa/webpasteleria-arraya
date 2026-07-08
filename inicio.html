@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastelería Arraya</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <img src="css/imagenes/logop.png" alt="Logo Pastelería Arraya" class="logo-img">
+            <h1>Pastelería Arraya</h1>
+        </div>
+        <nav class="nav-links">
+            <a href="inicio.html">INICIO</a>
+            <a href="servicios.html">PRODUCTOS</a>
+            <a href="historia.html">NOSOTROS</a>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-image">
+            <!-- Colocamos tortai.png y le damos estilo para que ocupe el espacio perfecto -->
+            <img src="css/imagenes/tortai.png" alt="Tortas artesanales" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+        </div>
+        <div class="hero-text">
+            <h2>Tortas artesanales para tus momentos especiales</h2>
+            <p>Dulces momentos hechos con amor y los mejores ingredientes.</p>
+            
+            <a href="servicios.html" class="btn-dark" style="text-decoration: none; display: inline-block; text-align: center;">VER PRODUCTOS</a>
+            
+        </div>
+    </section>
+
+    <nav class="destacados">
+        <a href="#">Tortas</a>
+        <a href="#">Postres</a>
+        <a href="#">Cupcakes</a>
+        <a href="#">Galletas</a>
+        <a href="#">Otros</a>
+    </nav>
+
+    <section class="historia">
+        <div class="historia-image">
+            <img src="css/imagenes/localh.png" alt="Local Pastelería Arraya" style="width: 100%; height: 100%; object-fit: cover; border-radius: 4px;">
+        </div>
+        <div class="historia-text">
+            <h2>¿Quiénes somos?</h2>
+            <p>En pastelería Arraya elaboramos productos artesanales con ingredientes de calidad y mucho cariño.</p>
+            <a href="historia.html" class="btn-outline">LEER MÁS</a>
+        </div>
+    </section>
+
+    <section class="productos">
+        <h3>Nuestros productos</h3>
+        <div class="carousel">
+            <button class="arrow">&lt;</button>
+            <div class="track-container">
+                <div class="product-cards">
+                    <!-- Tarjeta 1 -->
+                    <div class="card">
+                        <img src="css/imagenes/tortaC.png" alt="Torta" class="card-img">
+                        <div class="card-body">Tortas</div>
+                    </div>
+                    <!-- Tarjeta 2 -->
+                    <div class="card">
+                        <img src="css/imagenes/postreV.png" alt="Postre en vaso" class="card-img">
+                        <div class="card-body">Postres</div>
+                    </div>
+                    <!-- Tarjeta 3 -->
+                    <div class="card">
+                        <img src="css/imagenes/cupcake.png" alt="Cupcake" class="card-img">
+                        <div class="card-body">Cupcakes</div>
+                    </div>
+                    <!-- Tarjeta 4 -->
+                    <div class="card">
+                        <img src="css/imagenes/galletasP.png" alt="Galletas" class="card-img">
+                        <div class="card-body">Galletas</div>
+                    </div>
+                    <!-- Tarjeta 5 -->
+                    <div class="card">
+                        <img src="css/imagenes/cheesecakes.png" alt="Cheesecake" class="card-img">
+                        <div class="card-body">Cheesecakes</div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="arrow">&gt;</button>
+        </div>
+        <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+
+    <section class="contacto" id="contacto">
+        <div class="form-container">
+            <h3>Escríbenos</h3>
+            <form action="#">
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Mensaje" required></textarea>
+                <button type="submit" class="btn-pink">Enviar mensaje</button>
+            </form>
+        </div>
+        <div class="info-container">
+            <div class="info-grid">
+                <div class="info-item">
+                    <h4>Visítanos</h4>
+                    <p>+ 56 9 1234 5678</p>
+                    <p>contacto@pasteleriaarraya.cl</p>
+                </div>
+                <div class="info-item">
+                    <h4>Horario Atención</h4>
+                    <p>Lunes a Viernes<br>09:00 a 20:00</p>
+                </div>
+                <div class="info-item">
+                    <h4>Horario de entrega</h4>
+                    <p>Lunes a Viernes 09:00 a 19:00<br>Sábado y Domingo 10:00 a 15:00</p>
+                </div>
+            </div>
+            <div class="map-container">
+                
+                <iframe 
+                    src="https://www.google.com/maps?q=Bulnes+359,+Talcahuano,+Bío+Bío&output=embed"
+                    height="150" 
+                    style="border:0; border-radius: 4px; margin-bottom: 10px;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                
+                <p>Talcahuano, Chile</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="css/imagenes/logop.png" alt="Logo Pastelería Arraya" class="logo-footer-img">
+            <div>
+                <strong>Pastelería</strong><br>Arraya
+            </div>
+        </div>
+        <div class="footer-links">
+            <h4>Enlaces rápidos</h4>
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="servicios.html">Productos</a></li>
+                <li><a href="servicios.html">Tortas personalizadas</a></li>
+                <li><a href="historia.html">Nosotros</a></li>
+                <li><a href="inicio.html#contacto">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <h4>Síguenos</h4>
+            <div class="social-icons">
+                <a href="#"><img src="css/imagenes/wa-icon.png" alt="WhatsApp" class="social-icon"></a>
+                <a href="#"><img src="css/imagenes/ig-icon.png" alt="Instagram" class="social-icon"></a>
+                <a href="#"><img src="css/imagenes/fb-icon.png" alt="Facebook" class="social-icon"></a>
+            </div>
+        </div>
+        <div class="footer-subscribe">
+            <h4>Suscríbete</h4>
+            <input type="email" placeholder="Tu Email">
+        </div>
+    </footer>
+    <div class="copyright">
+        <p>2026 Pastelería Arraya. Todos los derechos reservados.</p>
+    </div>
+
+    <script src="js/interacciones.js"></script>
+</body>
+</html>
